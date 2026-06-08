@@ -1,0 +1,3 @@
+std_msgs/Header header
+float64 steering_angle_target
+float64 acceleration_target

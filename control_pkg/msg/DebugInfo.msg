@@ -1,0 +1,9 @@
+std_msgs/Header header
+float64 lateral_error
+float64 heading_error
+float64 velocity_error
+float64 mpc_solve_time_ms
+float64[] predicted_trajectory_x
+float64[] predicted_trajectory_y
+string status
+string[] warnings

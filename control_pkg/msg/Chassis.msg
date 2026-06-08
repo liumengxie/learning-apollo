@@ -1,0 +1,5 @@
+std_msgs/Header header
+float64 steering_angle
+float64 speed
+float64 acceleration
+uint8 gear_position
