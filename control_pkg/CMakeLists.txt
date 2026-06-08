@@ -21,7 +21,9 @@ set(msg_files
 rosidl_generate_interfaces(${PROJECT_NAME} ${msg_files} DEPENDENCIES std_msgs)
 
 add_library(control_core SHARED
-  src/vehicle_model.cpp src/anomaly_detector.cpp src/mpc_controller.cpp)
+  src/vehicle_model.cpp src/anomaly_detector.cpp src/mpc_controller.cpp
+  src/neural_network.cpp src/replay_buffer.cpp src/value_network.cpp
+  src/rl_mpc_controller.cpp)
 target_include_directories(control_core PUBLIC
   $<BUILD_INTERFACE:${CMAKE_CURRENT_SOURCE_DIR}/include>
   $<INSTALL_INTERFACE:include>)
